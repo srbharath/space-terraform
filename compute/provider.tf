@@ -11,6 +11,6 @@ provider "google" {
   # Configuration options
   project = "imposing-voyage-392509"
   zone = "us-central1-a"
-  credentials = "./keys.json"
+  credentials = "/mnt/workspace/keys.json"
 }
 
