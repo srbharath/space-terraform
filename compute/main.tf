@@ -10,8 +10,8 @@ resource "google_compute_instance" "vm-1" {
   machine_type = "e2-micro"
   zone = "asia-southeast1-a"
   network_interface {
-    # network = "custom-vpc"
-    # subnetwork = "custom-sub-1"
+     network = "default"
+     subnetwork = "default"
   }
   service_account {
     # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
