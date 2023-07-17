@@ -37,5 +37,9 @@ resource "google_compute_attached_disk" "attachdisk" {
   disk = google_compute_disk.extradisk.id
   
 }
+output "instance-names" {
+  value = google_compute_instance.vm-1.name
+  
+}
 
   
